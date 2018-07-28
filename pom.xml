@@ -5,12 +5,20 @@
     <groupId>org.springframework</groupId>
     <artifactId>jb-hello-world-maven</artifactId>
     <packaging>jar</packaging>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
 
     <!-- tag::joda[] -->
      <properties>
            <java.version>1.8</java.version>
      </properties>
+    
+    <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>Lenovo-PC-releases</name>
+        <url>http://localhost:8081/artifactory/libs-release-local</url>
+    </repository>
+</distributionManagement>
 
       <dependencies>
            <dependency>
